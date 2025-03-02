@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta charset="UTF-8">
+        <link rel="icon" href="/images/house.svg" type="image/x-icon">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link href="styles_hobbies.css" rel="stylesheet">
+        <title>Nadia's Hobbies</title>
+    </head>
+    <body>
+        <header>
+            <!-- Button to open sidenav (for mobile) -->
+            <span onclick="openNav()">
+                <img class="menu-icon" src="/images/menu-bar.png" alt="Menu Icon">
+            </span>
+            <!-- Side navigation -->
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div id="name">
+                    <a href="index.html">Nadiia Kovalova</a>
+                </div>
+                <div class="subpages">
+                    <a href="hobbies.html">Hobbies</a>
+
+                    <a href="career.html">Career</a>
+                </div>
+                <footer>
+                    <div class="footer-icons">
+                        <a href="https://t.me/nadin_kovaliova" target="_blank">
+                            <img src="/images/telegram-logo.png" alt="Telegram Icon">
+                        </a>
+
+                        <a href="https://www.instagram.com/kovaliova__nadin/" target="_blank">
+                            <img src="/images/instagram-logo.png" alt="Instagram Icon">
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/nadiya-kovaliova/" target="_blank">
+                            <img src="/images/linkedin.png" alt="LinkedIn Icon">
+                        </a>
+
+                        <a href="https://www.youtube.com/channel/UC7eF4eD_d4c4BVnULsiR6sw" target="_blank">
+                            <img src="/images/youtube.png" alt="Youtube Logo">
+                        </a>
+
+                        <a href="https://on.soundcloud.com/cqtvb1WLdGSrrFs7A" target="_blank">
+                            <img src="/images/soundcloud-logo.png" alt="SoundCloud Logo">
+                        </a>
+
+                    </div>
+                </footer>
+
+            </div>
+
+        </header>
+        <main>
+            <div id="black">
+                <div class="text-container">
+                    <h1>Concerning Hobbies</h1>
+
+                    <div>
+                        <h2>
+                            Here it is an illustrated chart which represents % of my interests
+                        </h2>
+
+
+                    </div>
+                </div>
+
+                <canvas id="myDoughnutChart" width="600" height="600"></canvas>
+                <img>
+            </div>
+
+            <div id="page">
+                <div class="text-container2">
+                    <h2>Music is one love❤ </h2>
+                    <div>
+                        <p>
+                            It has always been my passion. I started playing the violin at the age of five, graduated music school and decided to study in Conservatoire.
+                            I played in different student orcestras and solo.
+                        </p>
+                        <hr class="styled-line">
+                        <p>
+                            Mostly I played Academic Music, but also Pop and Rock music. I love deeply Scandinavian folk and violin in this style.
+                        </p>
+                    </div>
+                </div>
+                <div class="slider">
+                    <div class="slides" id="music-slides">
+                      <div class="slide"><img src="/images/violin1.JPG" alt="Image 1"></div>
+                      <div class="slide"><img src="/images/violin2.jpg" alt="Image 2"></div>
+                      <div class="slide"><img src="/images/violin3.jpg" alt="Image 3"></div>
+                      <div class="slide"><img src="/images/violin4.jpg" alt="Image 4"></div>
+                    </div>
+                    <!-- Navigation Arrows -->
+                    <button class="prev" onclick="prevSlide('music')">❮</button>
+                    <button class="next" onclick="nextSlide('music')">❯</button>
+                </div>
+            </div>
+            <div id="page">
+                <div class="text-container2">
+                    <h2>Yoga</h2>
+                    <div>
+                        <p>
+                            The other important part of me is Yoga and Indian philosophy.
+                        </p>
+                        <hr class="styled-line">
+                        <p>
+                            I've been practicing yoga and meditation for a long time
+                            and used to be in a yoga community where every person inspired me.
+                            This mindset and lifestyle are the nearest and dearest to me.
+                        </p>
+                    </div>
+                </div>
+                <div class="slider">
+                    <div class="slides" id="yoga-slides">
+                      <div class="slide"><img src="/images/Yoga1.jpg" alt="Image 1"></div>
+                      <div class="slide"><img src="/images/Yoga2.jpg" alt="Image 2"></div>
+
+                    </div>
+                    <!-- Navigation Arrows -->
+                    <button class="prev" onclick="prevSlide('yoga')">❮</button>
+                    <button class="next" onclick="nextSlide('yoga')">❯</button>
+                </div>
+            </div>
+
+            <div id="page">
+                <div class="text-container2">
+                    <h2>Nature</h2>
+                    <div>
+                        <p>
+                            My favourite way of recharging.
+                        </p>
+                        <hr class="styled-line">
+                        <p>
+                            Mountains are a place where you learn about inner self
+                            and people who went with you.
+                            A tent under the stars and on the river bank is no substitute for the best hotel.
+                            And a late-night bonfire will never be forgotten.
+                        </p>
+                    </div>
+                </div>
+                <div class="slider">
+                    <div class="slides" id="travel-slides">
+                      <div class="slide"><img src="/images/travel1.jpg" alt="Image 1"></div>
+                      <div class="slide"><img src="/images/travel2.JPG" alt="Image 2"></div>
+                      <div class="slide"><img src="/images/travel3.jpg" alt="Image 3"></div>
+                      <div class="slide"><img src="/images/travel4.jpg" alt="Image 4"></div>
+                      <div class="slide"><img src="/images/travel5.jpg" alt="Image 5"></div>
+                    </div>
+                    <!-- Navigation Arrows -->
+                    <button class="prev" onclick="prevSlide('travel')">❮</button>
+                    <button class="next" onclick="nextSlide('travel')">❯</button>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                  <!-- YouTube Card -->
+                  <div class="col-md-4">
+                    <div class="card">
+                      <img src="/images/youtube.png" class="card-img-top" alt="YouTube Logo" style="padding: 20px;">
+                      <div class="card-body">
+                        <h5 class="card-title">Visit my YouTube Channel</h5>
+                        <p class="card-text">Check out my music videos on YouTube.</p>
+                        <a href="https://www.youtube.com/channel/UC7eF4eD_d4c4BVnULsiR6sw" target="_blank" class="btn btn-danger" style="font-size: 1em; font-family: 'Anonymous Pro', monospace;">
+                          <i class="bi bi-youtube"></i> Go to YouTube
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- SoundCloud Card -->
+                  <div class="col-md-4">
+                    <div class="card">
+                      <img src="/images/soundcloud-logo.png" class="card-img-top" alt="SoundCloud Logo" style="padding: 20px;">
+                      <div class="card-body">
+                        <h5 class="card-title">Listen on SoundCloud</h5>
+                        <p class="card-text">Explore my compositions on SoundCloud.</p>
+                        <a href="https://on.soundcloud.com/cqtvb1WLdGSrrFs7A" target="_blank" class="btn btn-warning" style="font-size: 1em; font-family: 'Anonymous Pro', monospace;">
+                          <i class="bi bi-soundwave"></i> Go to SoundCloud
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+        </main>
+        <div class="info-box">
+            <p class="info">Get to know me through the subpages!</p>
+        </div>
+        <script src="script_hobbies.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    </body>
+</html>

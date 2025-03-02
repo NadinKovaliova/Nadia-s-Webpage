@@ -1,0 +1,560 @@
+/* Base styles (for larger screens, like desktop/laptops) */
+.sidenav {
+    height: 100%;
+    width: 224px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #F5F5F5;
+    overflow-x: hidden;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Footer stays at the bottom */
+    transition: 0.5s; /* For smooth opening/closing effect */
+    width: 0; /* Initially hidden on mobile */
+    padding: 0;
+    overflow: hidden;
+}
+
+.sidenav.open {
+    width: 224px; /* Open width for mobile */
+    padding: 20px;
+    z-index: 1;
+}
+
+.menu-icon {
+    margin-top: 20px;
+    margin-left: 20px;
+    display: flex;
+    width: 3em;
+    height: auto;
+    cursor: pointer;
+    filter: brightness(0) invert(1); /* Change color with CSS */
+    transition: fill 0.3s ease; /* Optional: Add a transition effect */
+
+
+    /* Pinning the icon to the top-left corner */
+    position: fixed; /* Fixes the icon to the viewport */
+    top: 20px;       /* Distance from the top */
+    left: 20px;      /* Distance from the left */
+
+}
+
+/* Change the color on hover */
+.menu-icon:hover {
+    display: flex;
+    filter: brightness(0) invert(0.8);
+}
+
+.closebtn {
+    display: flex;
+    font-size: 2em; /* Size of the close icon */
+    color: #121212; /* Text color */
+    background-color: transparent; /* Background color */
+    border: none; /* No border */
+    cursor: pointer; /* Cursor changes to pointer on hover */
+    position: absolute; /* Allows positioning within the sidenav */
+    top: 20px; /* Position from the top */
+    right: 20px; /* Position from the right */
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+/* Hover effect */
+.closebtn:hover {
+    display: flex;
+    color: #C4C4C4; /* Change color on hover */
+}
+
+#name {
+    text-decoration: none;
+    font-family: "Anonymous Pro", monospace;
+    color: #121212;
+    font-size: 1.875em;
+    font-weight: 700;
+    line-height: 0.7em;
+    letter-spacing: -0.04em;
+    text-align: left;
+    padding-left: 20px;
+    padding-top: 20px;
+    text-transform: uppercase;
+}
+
+#name a {
+    color: inherit; /* Ensures the anchor inherits the color */
+    text-decoration: none; /* Removes underline */
+}
+
+#name:hover {
+    color: #C4C4C4;
+}
+
+.subpages {
+    padding-left: 20px;
+}
+
+.subpages a {
+    text-decoration: none !important;
+    color: #818181;
+    display: block;
+    font-family: "Anonymus Pro", monospace;
+    font-weight: 400;
+    line-height: 1.25em;
+    margin-bottom: 0.5em;
+    font-size: 1.5625em;
+    text-align: left;
+
+}
+
+.subpages a:hover {
+    color: #C4C4C4;
+}
+
+
+h1 {
+    color: #F5F5F5;
+    font-family: 'Anonymous Pro', monospace;
+    line-height: 1em;
+    text-align: left;
+    font-size: 4em;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+    padding-left: 284px;
+    margin-top: 20px;
+}
+
+h2 {
+    color: #949494;
+    font-size: 2em;
+    font-family: 'Anonymous Pro', monospace;
+    font-weight: 400;
+    padding-left: 284px;
+    text-align: left;
+}
+
+p {
+    color: #949494;
+    font-size: 1.5em;
+    font-family: 'Anonymous Pro', monospace;
+    font-weight: 400;
+    padding-left: 284px;
+    text-align: left;
+
+}
+
+.styled-line {
+    border-top: 1px solid #F5F5F5;
+    opacity: inherit;
+}
+
+
+
+
+
+.sidenav footer {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+
+
+
+}
+
+.footer-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+}
+
+.footer-icons a {
+    display: inline-block;
+}
+
+.footer-icons img {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s ease;
+}
+
+.footer-icons a:hover img {
+    transform: scale(1.2);
+}
+
+
+
+
+canvas {
+
+    margin-bottom: 20px; /* Space from the bottom */
+    margin-left: 10em;
+    margin-top: 30vh;
+    margin-right: 1.25em;
+}
+
+
+
+body {
+    margin: 0; /* Removes default body margin */
+    padding: 0; /* Removes default body padding */
+    background-color: #121212 !important;
+    display: flex;
+    flex-direction: column; /* Arrange items in a column */
+    min-height: 100vh; /* Ensure body takes at least the full height of the viewport */
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+#black {
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: space-between; /* Space between items */
+    align-items: flex-start; /* Align items at the start vertically */
+    padding: 20px; /* Optional padding */
+}
+
+.text-container {
+    max-width: 50%; /* Set a maximum width for the text container */
+}
+
+/* Main content takes up all available space */
+main {
+    flex: 1; /* Allows the main content to expand and push the footer down */
+
+}
+
+
+#page {
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: space-between; /* Space between items */
+    align-items: flex-start;/* Align items at the start vertically */
+    flex-direction: column;
+    padding: 20px;
+
+}
+
+.text-container2 {
+    padding-right: 40%;
+}
+.slider {
+    position: relative;
+    width: 100%;  /* Set it to 100% of its parent container width */
+    max-width: 800px;  /* Define the maximum width for the slider */
+    height: 600px;  /* Define the height of the slider */
+    overflow: hidden;
+    margin-bottom: 20px; /* Space from the bottom */
+    padding-left: 40%;
+    margin-left: 284px;
+    padding-right: 0.5em;
+    box-sizing: initial;
+  }
+
+  .slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 80%;
+    height: 600px;
+  }
+
+  .slide {
+    min-width: 100%; /* Each slide will take up 100% of the slider’s width */
+    height: 100%;    /* Make sure each slide also takes up 100% of the slider height */
+    margin: 10px;
+  }
+
+  .slide img {
+    width: 100%;  /* Image takes full width */
+    height: 100%;  /* Image takes full height */
+    object-fit: contain;  /* Image will cover the entire slide, cropping if necessary */
+  }
+
+  .prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+
+  .prev {
+    left: 10px;
+  }
+
+  .next {
+    right: 10px;
+  }
+
+.card-text {
+    padding-left: 0px;
+    color: #949494;
+    font-size: 1em;
+    font-family: 'Anonymous Pro', monospace;
+    font-weight: 400;
+}
+
+.card {
+
+    margin: 40px;
+}
+
+.row {
+    justify-content: right;
+    marging-right: 0px;
+}
+
+
+.btn-linkedin {
+    background-color: #0077b5; /* LinkedIn color */
+    color: white; /* Text color */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+.btn-linkedin:hover {
+    background-color: #005582; /* Darker shade of LinkedIn color on hover */
+    color: white; /* Keep text color white on hover */
+}
+
+.info {
+    font-family: 'Anonymous Pro', monospace;
+    font-size: 2em;
+    color: #949494;
+    width: 100%; /* Full width */
+    margin-top: 20px; /* Adjust to create space below the image */
+
+    padding-left: 284px;
+    text-align: left;
+}
+
+.info-box {
+    background-color: #F5F5F5; /* White background */
+    color: #121212; /* Text color */
+
+    width: 100%; /* Ensures it doesn't exceed the screen width */
+
+    padding: 1em; /* Inner padding */
+
+}
+
+/* Mobile styles (up to 768px) */
+@media (max-width: 768px) {
+
+    main {
+        margin: 10px;
+    }
+    .sidenav {
+        width: 0; /* Initially hidden on mobile */
+        padding: 0;
+        overflow: hidden;
+    }
+
+    .sidenav.open {
+        width: 250px; /* Open width for mobile */
+        padding: 20px;
+    }
+
+    .menu-icon {
+        display: flex;
+        width: 30px;
+        height: auto;
+        cursor: pointer;
+        filter: brightness(0) invert(1); /* Change color with CSS */
+        transition: fill 0.3s ease; /* Optional: Add a transition effect */
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+
+    /* Change the color on hover */
+    .menu-icon:hover {
+        display: flex;
+        filter: brightness(0) invert(0.8);
+    }
+
+    .closebtn {
+        display: flex;
+        font-size: 2em; /* Size of the close icon */
+        color: #121212; /* Text color */
+        background-color: transparent; /* Background color */
+        border: none; /* No border */
+        cursor: pointer; /* Cursor changes to pointer on hover */
+        position: absolute; /* Allows positioning within the sidenav */
+        top: 20px; /* Position from the top */
+        right: 20px; /* Position from the right */
+        transition: color 0.3s ease; /* Smooth color transition on hover */
+    }
+
+    /* Hover effect */
+    .closebtn:hover {
+        display: flex;
+        color: #C4C4C4; /* Change color on hover */
+    }
+
+    .subpages {
+        padding-left: 0;
+        padding-left: 20px;
+        padding-top: 20px;
+    }
+
+    .subpages a {
+
+        font-size: 1.25em; /* Slightly smaller links */
+    }
+
+    #black {
+        height: 100vh; /* Full viewport height */
+        display: flex;
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items horizontally */
+
+        padding: 10px;
+
+    }
+
+    .text-container {
+        max-width: 100%; /* Set a maximum width for the text container */
+    }
+
+    h1 {
+        font-size: 1.5em;  /* Smaller heading */
+        padding-left: 20px;
+        margin-left: 10px;
+        margin-top: 40px;
+
+    }
+
+    h2 {
+        font-size: 1em;
+        padding-left: 20px;
+        margin-left: 10px;
+    }
+
+    p {
+        font-size: 1em;
+        padding-left: 20px;
+        margin-left: 10px;
+    }
+
+
+    canvas {
+        width: 100% !important; /* Make the canvas take full width of its parent */
+        max-width: 400px; /* Set a maximum width for larger screens */
+        height: auto !important; /* Maintain aspect ratio */
+        display: block; /* Ensures it's treated as a block element */
+        margin: 0 auto; /* Center align the chart */
+
+        margin-top: 10vh;
+        margin-left: 10px;
+    }
+
+    .sidenav footer {
+        justify-content: center;
+    }
+
+    #page {
+
+
+        height: 100vh; /* Full viewport height */
+        display: flex;
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items horizontally */
+        justify-content: normal; /* Align items to the top */
+        padding: 10px;
+
+    }
+
+    .text-container2 {
+        padding-right: 0%;
+    }
+
+    .slider {
+        width: 100% !important; /* Make the canvas take full width of its parent */
+        max-width: 400px; /* Set a maximum width for larger screens */
+        height: auto; /* Maintain aspect ratio */
+        padding-left: 20px;
+        margin-left: 40px;
+        padding-right: 0em;
+        margin-right: 40px;
+
+      }
+
+    .slides {
+        width: 100%;
+        height: auto;
+    }
+
+    .card-title {
+        margin-left: 10px;
+    }
+
+    .info {
+        font-family: 'Anonymous Pro', monospace;
+        font-size: 1em;
+        color: #949494;
+        width: inherit; /* Full width */
+        margin-top: 20px; /* Adjust to create space below the image */
+
+        padding-left: 20px;
+        text-align: left;
+    }
+
+    .info-box {
+        background-color: #F5F5F5; /* White background */
+        color: #121212; /* Text color */
+
+        width: inherit; /* Ensures it doesn't exceed the screen width */
+
+        padding: 1em; /* Inner padding */
+
+    }
+
+}
+
+
+
+
+/* Tablet styles (between 768px and 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    #black {
+
+        padding: 10px;
+
+    }
+
+    .sidenav {
+        width: 200px;
+    }
+
+    h1 {
+        font-size: 4em;
+        padding-left: 240px;
+    }
+
+    h2 {
+        font-size: 2.5em;
+        padding-left: 240px;
+    }
+
+    #typing {
+        font-size: 1.75em;
+        padding-left: 240px;
+        margin-right: 800px;
+    }
+
+    #me {
+        width: 50%;
+    }
+    .menu-icon {
+        display: none; /* Hides the menu icon on desktop */
+    }
+
+    .closebtn {
+        display: none; /* Hides the close button on desktop */
+    }
+}
+

@@ -1,0 +1,38 @@
+HTML Tags Used
+
+<html> - Defines the root of an HTML document.
+<head> - Contains meta-information about the document.
+<link> - Used to link to external stylesheets.
+<meta> - Provides metadata about the HTML document.
+<title> - Sets the title of the document shown in the browser tab.
+<body> - Contains the content of the document.
+<header> - Represents the header section of the document.
+<main> - Specifies the main content of the document.
+<div> - A generic container for grouping and styling content.
+<footer> - Represents the footer section of the document.
+<h1> - Defines a top-level heading.
+<h2> - Defines a second-level heading.
+<p> - Represents a paragraph of text.
+<img> - Embeds an image in the document.
+<a> - Defines a hyperlink.
+
+
+CSS Properties Used
+
+
+font-family - Specifies the font for an element.
+font-size - Sets the size of the font.
+color - Defines the text color.
+margin - Sets the outer spacing of an element.
+padding - Sets the inner spacing of an element.
+background-color - Sets the background color of an element.
+width - Specifies the width of an element.
+height - Specifies the height of an element.
+display - Specifies the display behavior of an element.
+flex - Defines a flexible layout.
+
+
+JavaScript and Bootstrap Integration
+JavaScript: I used JavaScript to create a typewriter effect for displaying text dynamically on the page and to implement a doughnut chart that visually represents my hobbies.
+Bootstrap: Bootstrap is integrated to provide responsive design and styling features for the navigation sidebar and overall layout.
+
